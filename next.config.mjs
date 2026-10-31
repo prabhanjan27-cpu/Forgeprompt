@@ -1,14 +1,18 @@
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-  turbopack: {
-    rules: {
-      "*.css": {
-        loaders: ["@tailwindcss/turbopack"],
-        as: "*.css",
+  serverExternalPackages: ["mongoose"],
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
       },
-    },
+    ],
   },
+
+  turbopack: {},
 };
 
 export default nextConfig;
