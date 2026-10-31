@@ -107,7 +107,7 @@ export const PromptCard = ({
       {(hasOverflow || expanded) && (
         <button
           type="button"
-          className="mb-4 cursor-pointer font-inter text-sm text-blue-600 hover:underline"
+          className="mb-4 block w-fit cursor-pointer font-inter text-sm text-blue-600 hover:underline"
           onClick={() => setExpanded((value) => !value)}
           aria-expanded={expanded}
         >
